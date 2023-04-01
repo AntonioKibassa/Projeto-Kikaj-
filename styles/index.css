@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+}
+body{
+    background:linear-gradient(rgb(38, 38, 50), rgb(32 32 45) ) ;
+
+}
+
+.container{
+    max-width: 1400px;
+    padding: 0 4%;
+    margin: 0 auto; 
+
+    padding-left: 2px;
+    padding-right: 3px;
+    padding-bottom: 2px;
+
+}
+
+.Navegador {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    margin-top: 25px;  
+   
+      height:12vh;
+      width: 100%;
+      background-color:  rgb(29 29 44);
+     
+      padding: 0 2em;
+
+      border-top:0px rgb(29 29 44);
+      border-left: 0px rgb(29 29 44);
+      border-right: 0px rgb(29 29 44);
+      border-bottom: 2px #04c1fa;
+      border-style:groove;
+      border-radius: 0.5rem;
+     
+     
+      padding-left: 2px;
+      padding-right: 3px;
+      padding-bottom: 2px;
+}
+
+.Navegador .logo{
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    color: rgb(0, 180, 252);
+    border: 2px #04c1fa;
+    border-style:ridge;
+    border-radius: 0.5rem;
+    padding-left: 2px;
+    padding-right: 3px;
+    padding-bottom: 2px;
+    
+}
+.Navegador .logo .sublogo{
+    font-size: 0.8rem;
+    text-transform:capitalize;
+    color: rgb(0, 180, 252);
+    text-align: right;
+}
+
+.Navegador ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.Navegador ul li{
+    padding: 10px;
+}
+
+.Navegador ul li a{
+    font-size: 19px;
+    text-transform: capitalize;
+    color:white;
+    text-decoration: none;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main .img{
+    width: 50%;
+    padding: 40px;
+
+}
+
+main .img img{
+    width: 100%; 
+    box-shadow: 0 0 20px #04c1fa;
+    border-radius: 10px;
+
+}
+
+main .content{
+    width: 50%;
+    color: white;
+    
+}
+
+main .content h1{
+    font-size: 3rem;
+}
+
+main .content p{
+    margin-top: 1.1rem;
+}
+main .grupo-botoes button a{
+    color: white;
+    text-decoration: none;
+
+}
+main .content .grupo-botoes button{
+
+        padding: 10px 20px;
+        margin-right: 20px;
+        margin-top: 30px;
+        border-radius: 10px;
+        font-size: 17px;
+        cursor: pointer;
+        border: none;
+        color: white;
+
+}
+main .content .grupo-botoes button:first-child{
+
+    box-shadow: 0 0 20px #f74471f5;
+    background: linear-gradient(#ff3e6e,#be2d6e);
+}
+main .content .grupo-botoes button:last-child{
+    box-shadow: 0 0 20px #04c1fa;
+    background: linear-gradient(#6edcf9,#1c60a0);
+}
+.parceiros {
+    display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-wrap: wrap;
+     
+ }
+
+.parceiros div{
+    width: 10%;
+    padding-top: 5px;
+    text-align: center;
+}
+.parceiros div img{
+    width: 100%;
+}
+
+footer{
+    font-size: smaller;
+    font-family:'Segoe UI', sans-serif;
+text-align: center;
+color: #1386ea4b;
+background-color:  rgb(29 29 44);
+     height: 40px;
+  padding-top: 15px;
+  margin-top: 5px;
+}
+
+/*Responsivo*/
+@media (max-width:850px){
+    main .img{
+       display: none; 
+    }
+    main .content{
+        width: 100%;
+        text-align: center;
+        margin-top: 90px;
+    }
+    .parceiros{ 
+   
+        margin-top: 70px;
+       
+    }
+    .parceiros div{ 
+         width: 20%;
+         padding: 20px;
+         text-align: center;
+    }
+    .parceiros div img{
+        width: 70%;
+        
+    }
+}
+@media (max-width: 430px) {
+    main .content h1{
+        font-size: 2.5rem;
+    }
+    main .content p{
+        font-size: 0.8rem;
+    }
+    
+}
+
+@media (max-width:300px) {
+    nav ul li a{
+        font-size: 16px;
+        
+    }
+    main .content h1{
+        font-size: 1.5rem;
+
+    }
+   .parceiros div img{
+    width:100% ;
+   }
+    
+}
+
+        
+    
+   
+
+
+    

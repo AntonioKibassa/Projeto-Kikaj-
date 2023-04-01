@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="Img\KikaJócms.png"rel="icon">
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="styles/signup.css">
+
+</head>
+
+
+<body>
+  <a href="Index.html" style="   color: rgb(0, 180, 252); text-decoration: none;"><p >⇐ Voltar</p></a>
+
+  <form class="loginform ">
+    <nav>
+      <div class="logo">
+        kikajó
+        <div class="sublogo">
+          commerce
+        </div>
+      </div>
+    </nav>
+    <h1 class="h3 mb-3 font-weight-normal">Seja bem vindo!<br></h1>
+
+    <label for="inputEmail" class="sr-only">Nome de Usuário <br></label>
+    <input type="text" id="username" class="form-control" placeholder="username" required autofocus>
+
+    <label for="inputEmail" class="sr-only">Email <br></label>
+    <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required>
+
+    <label for="inputPassword" class="sr-only">Senha <br></label>
+    <input type="password" id="inputPassword" class="form-control" placeholder="Password" required><br>
+
+    <label for="inputPassword" class="sr-only">Data de Nascimento <br></label>
+    <input type="date" class="form-control" style=" margin-bottom: 10px;">
+
+    <div class="checkgroupp" style="text-align:left;padding-left: 1rem; margin-bottom: 10px;">
+
+
+      <input type="checkbox" id="checkbox1" >
+      <label for="checkbox1">M</label>
+
+      <input type="checkbox" id="checkbox2">
+      <label for="checkbox2">F</label>
+
+      <input type="checkbox" id="checkbox3">
+      <label for="checkbox3">Outro</label><br>
+
+    </div>
+
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Registar</button>
+
+    <span class="signin">
+      <p>Já possui uma conta? <a href="login.html">Entrar</a> </p>
+    </span>
+
+    <p class="mt-5 mb-3 text-muted">&copy; 2023-2024</p>
+  </form>
+
+  <script>
+
+    window.onload = function () {
+      var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+
+      for (var i = 0; i < checkboxes.length; i++) {
+        checkboxes[i].addEventListener("change", function () {
+          var checkbox = this;
+          if (checkbox.checked) {
+            for (var j = 0; j < checkboxes.length; j++) {
+              if (checkboxes[j] !== checkbox) {
+                checkboxes[j].checked = false;
+              }
+            }
+          }
+        });
+      }
+    };
+  </script>
+
+</div>
+<footer>
+    Kibasoft Developper © 2023
+</footer>
+
+</body>
+
+</html>

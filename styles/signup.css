@@ -1,0 +1,143 @@
+* {
+  margin: ;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  margin-top: 80px;
+  background-color: rgb(32 32 45);
+}
+
+nav {
+    display:flex;
+    align-items: center;
+  
+    margin-top: 25px;  
+   margin-bottom: 25px;
+      height:12vh;
+      width: 90%;
+      background-color:  rgb(29 29 44);
+     border-radius: 20px;
+      padding: 0 5em;
+}
+
+nav .logo{
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    color: rgb(0, 180, 252);
+    border: 2px #04c1fa;
+    border-style:ridge;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+nav .logo .sublogo {
+  font-size: 0.8rem;
+  text-transform: capitalize;
+  color: rgb(0, 180, 252);
+  text-align: right;
+}
+
+.loginform h1 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  padding: 0 3rem;
+}
+
+.loginform {
+
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin-top: 50%;
+  margin: 0 auto;
+  color: white;
+
+
+}
+
+
+.loginform .form-control {
+    position: relative;
+  box-sizing: border-box;
+  height: 30px;
+  width:250px;
+  padding:10px;
+  font-size: 16px;
+ color:wheat;
+  background: linear-gradient(rgba(29,29,44),#1c60a0);
+border-style:none ;
+margin-left: 1rem;
+}
+
+.loginform .form-control:focus {
+  z-index: 2;
+}
+
+.loginform input[type="text"] {
+
+  margin-bottom: 10px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.loginform input[type="email"] {
+
+  margin-bottom: 10px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.loginform input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.sr-only{
+  margin-left: 1rem !important;
+
+}
+
+.loginform button {
+  padding: 10px 98px;
+  margin-right: 20px;
+  margin-top: 10px;
+  border-radius: 10px;
+  font-size: 12px;
+  cursor: pointer;
+  border: none;
+  color: white;
+  margin-left: 1rem;
+  margin-bottom: 30px;
+  box-shadow: 0 0 20px #04c1fa;
+  background: linear-gradient(#6edcf9, #1c60a0);
+}
+
+.loginform p {
+text-align: center;
+
+}
+
+.loginform .signin p {
+text-align: center;
+}
+
+.loginform .signin a {
+  text-align: center;
+  text-decoration: none;
+  color: #04c1fa;
+}
+
+footer{
+  font-size: smaller;
+  font-family:'Segoe UI', sans-serif;
+text-align: center;
+color: #1386ea4b;
+background-color:  rgb(29 29 44);
+   height: 40px;
+padding-top: 15px;
+margin-top: 1.8rem;
+}

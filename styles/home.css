@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: rgb(32 32 45);
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 1400px;
+    padding: 0 4%;
+    margin: 0 auto;
+
+
+}
+
+.container .row {
+    margin-top: 80px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    color: aliceblue;
+
+
+}
+
+img {
+    border-radius: 10px;
+}
+
+.card-body {
+    background-color: #041e4641;
+    border: #06306eaf;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 0 10px 0;
+    line-height: 30px;
+}
+
+.Navegador {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+
+    height: 12vh;
+    width: 100%;
+    background-color: rgb(29 29 44);
+
+    padding: 0 2em;
+
+    border-top: 0px rgb(29 29 44);
+    border-left: 0px rgb(29 29 44);
+    border-right: 0px rgb(29 29 44);
+    border-bottom: 2px #04c1fa;
+    border-style: groove;
+    border-radius: 0.5rem;
+
+
+    padding-left: 2px;
+    padding-right: 3px;
+    padding-bottom: 2px;
+}
+
+.Navegador .logo {
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    color: rgb(0, 180, 252);
+    border: 2px #04c1fa;
+    border-style: ridge;
+    border-radius: 0.5rem;
+    padding-left: 2px;
+    padding-right: 3px;
+    padding-bottom: 2px;
+
+}
+
+.Navegador .logo .sublogo {
+    font-size: 0.8rem;
+    text-transform: capitalize;
+    color: rgb(0, 180, 252);
+    text-align: right;
+}
+
+.Navegador ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding-left: 8rem;
+}
+
+.Navegador ul li {
+    padding: 0 5px 0 5px;
+}
+
+.Navegador ul li a {
+    font-size: 19px;
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+}
+
+#buttonn {
+    color: aliceblue;
+    background-color: #033a81;
+}
+
+#inputi {
+    color: aliceblue;
+    background-color: #195fbbde;
+
+    border-color: #04589cda;
+    border-radius: 4px;
+
+}
+
+#inputi:hover {
+    border-color: #0a86ec;
+}
+
+.parceiros {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.parceiros div {
+    width: 10%;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.parceiros div img {
+    width: 100%;
+}
+
+footer {
+    font-size: smaller;
+    font-family: 'Segoe UI', sans-serif;
+    text-align: center;
+    color: #1386ea4b;
+    background-color: rgb(29 29 44);
+    height: 40px;
+    padding-top: 15px;
+    margin-top: 2rem;
+}
+
+button {
+    display: inline-block;
+    height: 20px;
+    width: 100px;
+    border-radius: 10px;
+    border: 1px solid #03045e;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease-in;
+    z-index: 1;
+
+
+
+    background-color: #ffa806f8;
+
+
+}
+
+button::before,
+button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 100%;
+    transform: skew(15deg);
+    transition: all 0.5s;
+    overflow: hidden;
+    z-index: -1;
+}
+
+button::before {
+    left: -10px;
+    background: #fc7304ef;
+}
+
+button::after {
+    right: -10px;
+    background: #fc7304ef;
+}
+
+button:hover::before,
+button:hover::after {
+    width: 60%;
+}
+
+
+button {
+    color: #033a81;
+    font-size: 10pt;
+    transition: all 0.3s ease-in;
+    margin-top: 5px;
+}
+
+
+
+/*Responsivo*/
+
+
+@media screen and (max-width: 600px) {
+  #buttonn {
+        flex-direction: column;
+    }
+
+    #inputi[type="search"] {
+        width: 100%;
+    }
+
+    #buttonn[type="submit"] {
+        width: 100%;
+        font-size: 8pt;
+        text-align: center;
+        padding-left: 10px;
+        padding-top: 3px;
+    }
+    nav ul li a{
+        font-size: 12pt;
+    }
+}
